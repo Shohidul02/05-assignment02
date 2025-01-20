@@ -1,0 +1,261 @@
+/* styles.css */
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", serif;
+}
+body {
+    background-color: #F7F7F7;
+    color: #333;
+  }
+  /* common css */
+  .orange {
+    color: #FFA500;
+  }
+  
+  .blue {
+    color: #007BFF;
+  }
+.sky-blue{
+    color: #62d4da;
+
+}
+.purple{
+    color: #8D8AF2;
+}
+  /* navbar section */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 141px;
+    background-color: #F7F7F7;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  .nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    color: #052342;
+  }
+  
+  .contact-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #e69500;
+  }
+  /* banner section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 141px;
+    background-color: #F7F7F7;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+
+  
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .enroll-btn {
+    display: inline-block;
+    background-color: #0f0f0f;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .enroll-btn:hover {
+    background-color: #555;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+  }
+  /* Attandard curriculam section */
+  .main{
+    background-image: url(../assets/bg.png);
+  }
+  .curriculum-section {
+    text-align: center;
+}
+.curriculum-section h2 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.curriculum-cards {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+.curriculum-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 70px 28px;
+    width: 300px;
+    text-align: center;
+}
+.curriculum-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.curriculum-card h3 {
+    margin-bottom: 10px;
+}
+.curriculum-card p {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.carousel-controls {
+    margin-top: 20px;
+}
+.curriculum-card-1{
+  background-image: linear-gradient(180deg, #E3F6FE, white);
+}
+.curriculum-card-2{
+  background-image: linear-gradient(180deg, #FFF7E6, white);
+}
+.curriculum-card-3{
+  background-image: linear-gradient(180deg, #F1E7FE, white);
+}
+.carousel-controls button {
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/* marquee section */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Responsive c */
+@media screen and (max-width:576px){
+.contact-btn{
+    display: none;
+}
+.hero {
+    display: flex;
+    flex-direction: column-reverse; /* Display hero-content below hero-image */
+    padding: 20px;
+    text-align: center;
+  }
+  .nav-links {
+    display: none; /* Hide the navbar links */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .curriculum-section, .curriculum-cards{
+    flex-direction: column;
+    justify-items: center;
+   
+  }
+  .carousel-controls{
+    display: none;
+  }
+}
+
