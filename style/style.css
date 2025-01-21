@@ -35,6 +35,8 @@ body {
     align-items: center;
     padding: 10px 141px;
     background-color: #F7F7F7;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .logo {
@@ -76,7 +78,7 @@ body {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
@@ -92,6 +94,8 @@ body {
     justify-content: space-between;
     padding: 50px 141px;
     background-color: #F7F7F7;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .hero-content {
@@ -99,7 +103,7 @@ body {
   }
   
   .hero-content h1 {
-    font-size: 48px;
+    font-size: 56px;
     line-height: 1.2;
     margin: 0;
   }
@@ -107,7 +111,7 @@ body {
 
   
   .hero-content p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     margin: 20px 0;
     color: #555;
@@ -119,12 +123,10 @@ body {
     color: white;
     padding: 10px 40px;
     border: none;
-    border-radius: 5px;
-    text-decoration: none;
+    border-radius: 12px;
     font-size: 16px;
     transition: background-color 0.3s;
   }
-  
   .enroll-btn:hover {
     background-color: #555;
   }
@@ -148,7 +150,7 @@ body {
     height: 3px;
     background-color: #333;
   }
-  /* Attandard curriculam section */
+  /* Standard curriculam section */
   .main{
     background-image: url(../assets/bg.png);
   }
@@ -156,8 +158,9 @@ body {
     text-align: center;
 }
 .curriculum-section h2 {
+    font-size: 48px;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .curriculum-cards {
     display: flex;
@@ -167,7 +170,7 @@ body {
 .curriculum-card {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 70px 28px;
+    padding: 60px 28px;
     width: 300px;
     text-align: center;
 }
@@ -177,11 +180,13 @@ body {
     margin-bottom: 20px;
 }
 .curriculum-card h3 {
+  font-size: 24px;
     margin-bottom: 10px;
 }
 .curriculum-card p {
     color: #6c757d;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 .carousel-controls {
     margin-top: 20px;
@@ -205,13 +210,150 @@ body {
     font-size: 18px;
     margin: 0 10px;
     cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
+.carousel-controls button:hover{
+  background-color: #ffae00;
+}
+/* .............................................................. */
+/* our Stories section */
+.our-story{
+  text-align: center;
+  font-size: 46px;
+}
+.blog-section{
+  background:linear-gradient(360deg, #F9E0B4, #F7F7F7);
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* Blog Main Card */
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content .date {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #62d4da;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+.btn{
+  padding: 10px 30px;
+    font-size: 10px;
+    margin-left: -320px;
+    margin-top: 200px;
+    border-radius: 20px;
+    border: none;
+    background: #3CD8E8;
+    color: white;
+}
+
+/* Blog Grid */
+.second-blog{
+  background-image: url(../assets/story-2.png);
+}
+.third-blog{
+  background-image: url(../assets/story-3.png);
+  height: auto;
+
+}
+.fourth-blog{
+  background-image: url(../assets/story-4.png);
+
+}
+.fifth-blog{
+  background-image: url(../assets/story-5.png);
+
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.blog-grid .blog-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-grid .blog-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-grid .blog-content {
+  padding: 15px;
+}
+
+.blog-grid .blog-date {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #62d4da;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.blog-grid h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+/* viwe all button */
+.container1{
+  display: flex;
+  justify-content: center;
+  background-color: #F9E1B6;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/* ........................................................ */
 /* marquee section */
 .marquee-container {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
+  background-color: #F8E1B7;
 }
 .marquee {
   display: inline-block;
@@ -226,66 +368,6 @@ body {
       transform: translateX(-100%);
   }
 }
-/* our Stories section */
-.blog-section {
-  background: linear-gradient(to bottom, #f8e8d0, #fdfdfd);
-  padding: 40px;
-  font-family: "Quicksand", sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Blog Main Card */
-.blog-main-card {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.blog-main-card .blog-card {
-  flex: 1;
-  display: flex;
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.blog-main-card .blog-image {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-.blog-main-card .blog-content {
-  flex: 1;
-  padding: 20px;
-}
-
-.blog-main-card .blog-date {
-  display: inline-block;
-  font-size: 14px;
-  background-color: #007BFF;
-  color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
-
-.blog-main-card h3 {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.blog-main-card p {
-  color: #666666;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-
 /* footer section */
 .footer {
   padding: 40px 20px;
@@ -300,6 +382,7 @@ body {
   justify-content: space-between;
   width: 90%;
   max-width: 1200px;
+  padding: 80px 0;
 }
 
 .footer-section {
@@ -361,6 +444,8 @@ body {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
   .nav-links {
     display: none;
@@ -381,7 +466,7 @@ body {
     justify-items: center;
    
   }
-  .carousel-controls{
+  .carousel-controls button{
     display: none;
   }
   .container{
@@ -391,6 +476,9 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 0;
+  }
+  .card{
+    display: none;
   }
 }
 
