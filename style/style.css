@@ -368,6 +368,15 @@ body {
       transform: translateX(-100%);
   }
 }
+<<<<<<< HEAD
+=======
+
+
+.blog-main-card .blog-content {
+  flex: 1;
+  padding: 20px;
+}
+>>>>>>> 3ac0623501abcaeea1c94e2a84caba8d49911882
 /* footer section */
 .footer {
   padding: 40px 20px;
