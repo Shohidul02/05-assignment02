@@ -161,6 +161,7 @@ body {
     font-size: 48px;
     margin-bottom: 30px;
     margin-top: 60px;
+    margin-bottom: 80px;
 }
 .curriculum-cards {
     display: flex;
@@ -242,7 +243,7 @@ body {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 100;
 }
 
 .card-content {
@@ -310,6 +311,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .blog-grid .blog-image {
@@ -336,6 +338,63 @@ body {
   font-size: 16px;
   margin: 10px 0;
   color: #333333;
+}
+.btn2{
+    padding: 10px 30px;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #95B226;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.btn3{
+  padding: 10px 30px;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  background: #0b6c77;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.btn4{
+  padding: 10px 30px;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #09a6b8;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.btn5{
+  padding: 10px 30px;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #096441;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
 
 /* viwe all button */
@@ -368,15 +427,11 @@ body {
       transform: translateX(-100%);
   }
 }
-<<<<<<< HEAD
-=======
-
 
 .blog-main-card .blog-content {
   flex: 1;
   padding: 20px;
 }
->>>>>>> 3ac0623501abcaeea1c94e2a84caba8d49911882
 /* footer section */
 .footer {
   padding: 40px 20px;
@@ -489,5 +544,11 @@ body {
   .card{
     display: none;
   }
+  .btn2, .btn3, .btn4, .btn5{
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
 }
 
