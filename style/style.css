@@ -323,17 +323,6 @@ body {
 .blog-grid .blog-content {
   padding: 15px;
 }
-
-.blog-grid .blog-date {
-  display: inline-block;
-  font-size: 12px;
-  background-color: #62d4da;
-  color: #ffffff;
-  padding: 4px 8px;
-  border-radius: 15px;
-  margin-bottom: 8px;
-}
-
 .blog-grid h3 {
   font-size: 16px;
   margin: 10px 0;
