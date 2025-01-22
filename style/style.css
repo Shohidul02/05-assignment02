@@ -31,7 +31,7 @@ body {
   /* navbar section */
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 10px 141px;
     background-color: #F7F7F7;
@@ -86,6 +86,12 @@ body {
   
   .contact-btn:hover {
     background-color: #e69500;
+  }
+  .horizontal{
+    height:2px;
+    background-color:#FFA500;
+    color:#FFA500;
+    display: none;
   }
   /* banner section */
   .hero {
@@ -248,16 +254,6 @@ body {
 
 .card-content {
   padding: 16px;
-}
-
-.card-content .date {
-  display: inline-block;
-  font-size: 12px;
-  background-color: #62d4da;
-  color: #ffffff;
-  padding: 4px 8px;
-  border-radius: 15px;
-  margin-bottom: 8px;
 }
 
 .card-content h3 {
@@ -493,6 +489,16 @@ body {
 .contact-btn{
     display: none;
 }
+.navbar {
+  padding:20px;
+  margin: 0 auto;
+}
+.horizontal{
+  display: block;
+}
+.hero-content {
+  max-width: 90%;
+}
 .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -538,6 +544,9 @@ body {
     top: 65%;
     left: 30%;
     transform: translate(-50%, -50%);
+}
+.navbar{
+  
 }
 }
 
