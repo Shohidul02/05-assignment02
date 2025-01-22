@@ -523,7 +523,6 @@ body {
   .curriculum-section, .curriculum-cards{
     flex-direction: column;
     justify-items: center;
-   
   }
   .carousel-controls button{
     display: none;
